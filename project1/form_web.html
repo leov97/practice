@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+      <link rel="stylesheet" href="form_web.css">
+
+</head>
+<body>
+
+  <div class="container">
+  
+  <h1 id="title">Job Application Form</h1>
+  <div class="description">
+    <p id="description">Thank you for your interest in joining our team. Please take a moment to fill out the job application form below, and help us get to know you better.</p>
+  </div>
+  <form id="survey-form">
+  
+    <fieldset class="personal">
+      <label class="slabel" id="name-label">Name 
+        <input class="personal-info" id="name" type="text" placeholder="Name" required >
+      </label>
+
+      <label class="slabel" id="email-label">Email 
+        <input class="personal-info" id="email" type="email" placeholder="Email"required>
+      </label>
+
+      <label class="slabel" id="number-label">Number 
+        <input class="personal-info" id="number" type="number" max="8" min="8" placeholder="Number">
+      <label>
+    </fieldset>
+
+
+    <fieldset class="select-option">
+    <select id="dropdown">
+      <option>Online advertising</option>
+      <option>Recommendation from a friend</option>
+      <option>online search</option>
+      <option>other</option>
+    </select>
+  </fieldset>
+  
+  <fieldset class="skills">
+    <p>What's your level as a developer</p>
+
+  <div class="select-radio">
+    <label>Junior <input name="level" value="junior" type="radio"></label>
+
+    <label>Semi Senior <input name="level" value="s-senior" type="radio"></label>
+
+    <label>Senior <input name="level" value="senior" type="radio"></label>
+  </div>
+
+  <p>Which libraries do you master of the following?</p>
+  <div class="select-check">
+    <label>Pandas<input value="pandas" type="checkbox"></label>
+    <label>Flask<input value="flask" type="checkbox"></label>
+    <label>React<input value="react" type="checkbox"></label>
+    <label>Angular<input value="angular" type="checkbox"></label>
+    <label>Django<input value="django" type="checkbox"></slabel>
+  </div>
+ 
+  <label><textarea id="bio" name="bio" rows="3" cols="50" placeholder="I like coding on the beach..."></textarea></label>
+
+
+
+  <input type="submit" id="submit">
+
+</fieldset>
+  </form>
+
+  
+
+</div>
+</body>
